@@ -1,0 +1,22 @@
+package MathsForDSA;
+
+public class newtonSQRT {
+    public static void main(String[] args) {
+
+    }
+
+    static double newtonsqrt(int n){
+        double x = n;
+        double root;
+        while(true){
+            root = 0.5 * (x+ (n/x));
+
+            if(Math.abs(x-root) <1){
+                break;
+            }
+            x = root;
+        }
+
+        return root;
+    }
+}
